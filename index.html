@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" type="image/png" href="favicon.png"/>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+    <title>MegaProjekt - WEB</title>
+</head>
+<body>
+    <header>
+        <div class="nav_top">
+            <a class="active">Home<a><span class="seperator"> | </span>
+            <a href="#about">About</a>
+        </div>
+        <h1 class="title">FutureEvents - WEB</h1>
+    </header>
+    <h2>Wilkommen zu FutureEvents!</h2>
+    <p>Du magst CraftAttack, Varo, Suro und Minigames? Dann ist FutureEvents das richtige für dich! Wir kombinieren alles vorher aufgezählte in ein Mega großes Projekt, dass über eine längere Zeit laufen wird!</p>
+        <img class="hubimg jc-fading" src="img/fbhub_1.png">
+        <img class="hubimg jc-fading" src="img/fbhub_2.png">
+        <img class="hubimg jc-fading" src="img/fbhub_3.png">
+        <img class="hubimg jc-fading" src="img/fbhub_4.png">
+        <img class="hubimg jc-fading" src="img/fbhub_5.png">
+        <img class="hubimg jc-fading" src="img/fbhub_6.png">
+    <br/>
+    <p class="q">The next Event:<blockquote class="qnex">
+        the 19th of Nov
+    </blockquote></p>
+    <p class="q">You want to join the Event?<blockquote class="qjoin">>
+        <a href="#join">Join „FutureEvents“</a></blockquote></p>
+    <button>buttontext</button>
+        <hr class="hr.bottom">
+        <center>
+            <a href="https://thejakobcraft.xyz/"><p>© 2021 - JakobKampichler™ Media</p><a href="mailto:thejakobcraft@gmail.com"><p>Contact me here!</p></a></a>
+        </center>
+    </footer>
+    <script>
+        var slideIndex = 0;
+        carousel();
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("hubimg");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > x.length) {slideIndex = 1}
+            x[slideIndex-1].style.display = "block";
+            setTimeout(carousel, 5000);
+}
+    </script>
+</html>
