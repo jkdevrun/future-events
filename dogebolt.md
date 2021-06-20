@@ -1,2 +1,1 @@
-# Link
-## (`Click`)[https://workupload.com/file/zRRvWXTXmSG]
+# [lnk](https://workupload.com/file/zRRvWXTXmSG)
