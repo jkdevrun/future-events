@@ -2,7 +2,7 @@
 name: Feature request
 about: 'Schlag uns eine Idee für #future-events vor!'
 title: "[REQ]"
-labels: enhancement, question
+labels: feature
 assignees: ''
 
 ---
