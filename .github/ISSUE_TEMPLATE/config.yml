@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: theJakobcraft.xyz
+    url: https://thejakobcraft.xyz/
+    about: The Official theJakobcraft website.
+  - name: future-events website
+    url: https://meta.thejakobcraft.xyz/fe/
+    about: The Official future-events website.
+  - name: future-events roadmap
+    url: https://meta.thejakobcraft.xyz/fe/rmp
+    about: The future-events roadmap. If a feature you want is on there, then do NOT post an request here!
