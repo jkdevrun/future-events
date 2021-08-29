@@ -1,0 +1,5 @@
+- name: dcn
+  uses: johnnyhuy/actions-discord-git-webhook@v0.0.1
+  with:
+    # Discord webhook URL
+    webhook_url: https://discord.com/api/webhooks/881557169240158280/4YKhWs3wz5Rqx5ebGM_XLY85sUh6eppxWo5mSV5I-HnUuA9_4Qb1_hWV1IonTgJUgPxL
