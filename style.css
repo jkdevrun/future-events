@@ -135,11 +135,10 @@ a:hover {
   
   .hubimages {
     position: relative;
-    display: inline-block;
+    display: none;
   }
   
   .hubimages_content {
-    display: none;
     position: absolute;
     background-color: #f1f1f1;
     min-width: 160px;
