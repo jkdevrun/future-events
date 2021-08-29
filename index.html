@@ -22,14 +22,14 @@
     <p>Du magst CraftAttack, Varo, Suro und Minigames? Dann ist FutureEvents das richtige für dich! Wir kombinieren alles vorher aufgezählte in ein Mega großes Projekt, dass über eine längere Zeit laufen wird!</p>
     
     <div class="hubimages">
-        <button onclick="dropDown()" class="hubimages_btn">Click Me to see Images of the Hub</button>
+        <button onclick="hmgDropDown()" class="hubimages_btn">Hub-Image Toggle. Press me!</button>
         <div id="hubDropDown" class="hubimages_content">
-        <img class="hubimg jc-fading" src="img/fbhub_1.png">
-        <img class="hubimg jc-fading" src="img/fbhub_2.png">
-        <img class="hubimg jc-fading" src="img/fbhub_3.png">
-        <img class="hubimg jc-fading" src="img/fbhub_4.png">
-        <img class="hubimg jc-fading" src="img/fbhub_5.png">
-        <img class="hubimg jc-fading" src="img/fbhub_6.png">
+            <img class="hubimg jc-fading" src="img/fbhub_1.png">
+            <img class="hubimg jc-fading" src="img/fbhub_2.png">
+            <img class="hubimg jc-fading" src="img/fbhub_3.png">
+            <img class="hubimg jc-fading" src="img/fbhub_4.png">
+            <img class="hubimg jc-fading" src="img/fbhub_5.png">
+            <img class="hubimg jc-fading" src="img/fbhub_6.png">
         </div>
     </div>
 
@@ -56,6 +56,7 @@
     <script>
         var slideIndex = 0;
         carousel();
+        
         function carousel() {
             var i;
             var x = document.getElementsByClassName("hubimg");
@@ -66,6 +67,24 @@
             if (slideIndex > x.length) {slideIndex = 1}
             x[slideIndex-1].style.display = "block";
             setTimeout(carousel, 3250);
-}
+        }
+
+        function hmgDropDown() {
+            document.getElementById("hubDropDown").classList.toggle("show");
+        }
+
+        window.onclick = function(event) {
+            if (!event.target.matches('.hubimages_btn')) {
+                var dropdowns = [ document.getElementsByClassName("hubimages_content") ];
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+
     </script>
 </html>

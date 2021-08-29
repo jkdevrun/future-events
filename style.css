@@ -119,3 +119,33 @@ a:hover {
   #topBtn:hover {
     background-color: #555;
   }
+
+  .hubimages_btn {
+    background-color: #3498DB;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .hubimages_btn:hover, .hubimages_btn:focus {
+    background-color: #2980B9;
+  }
+  
+  .hubimages {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .hubimages_content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+  .show {display:block;}
