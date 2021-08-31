@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" type="image/png" href="../favicon.png"/>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+    <title>future-events - WEB</title>
+</head>
+<body>
+    <header>
+        <div class="nav_top">
+            <a href="../index.html">Home<a><span class="seperator"> | </span>
+            <a class="active">Games<a><span class="seperator"> | </span>
+            <a href="../index.html#about">About</a>
+        </div>
+        <h1 class="title">FutureEvents - WEB</h1>
+    </header>
+
+    <h3 class="q">Der Hub:</h3>
+        <blockquote><p class="qnex">Der Hub ist der zentrale Ort für alles! Hier wird das nächste Spiel ausgesucht, dort werden die Teilnehmer auch spawnen!</p>
+            <img class="hubimg jc-fading" src="../img/fbhub_1.png">
+            <img class="hubimg jc-fading" src="../img/fbhub_2.png">
+            <img class="hubimg jc-fading" src="../img/fbhub_3.png">
+            <img class="hubimg jc-fading" src="../img/fbhub_4.png">
+            <img class="hubimg jc-fading" src="../img/fbhub_5.png">
+            <img class="hubimg jc-fading" src="../img/fbhub_6.png">
+        </blockquote>
+    <br/>
+        <hr class="hr.bottom">
+        <center>
+            <a href="https://thejakobcraft.xyz/"><p>© 2021 - JakobKampichler™ Media</p><a href="mailto:thejakobcraft@gmail.com"><p>Contact me here!</p></a></a>
+        </center>
+    </footer>
+    <script>
+
+        var slideIndex = 0;
+        carousel();        
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("hubimg");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > x.length) {slideIndex = 1}
+            x[slideIndex-1].style.display = "block";
+            setTimeout(carousel, 3250);
+        }
+
+        window.onclick = function(event) {
+            if (!event.target.matches('.hubimages_btn')) {
+                var dropdowns = [ document.getElementsByClassName("hubimages") ];
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+
+    </script>
+</html>
